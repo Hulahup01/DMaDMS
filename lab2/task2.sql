@@ -33,6 +33,9 @@ END;
 
 -- ================================
 
+DROP SEQUENCE IF EXISTS students_id_seq;
+DROP SEQUENCE IF EXISTS groups_id_seq;
+
 CREATE SEQUENCE students_id_seq START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE groups_id_seq START WITH 1 INCREMENT BY 1;
 
@@ -56,9 +59,7 @@ BEGIN
     END IF;
 END;
 
-
 -- ================================
-
 
 CREATE OR REPLACE TRIGGER trg_unique_group_name
 BEFORE INSERT OR UPDATE ON GROUPS

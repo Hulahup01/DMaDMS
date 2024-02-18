@@ -12,16 +12,3 @@ CREATE TABLE STUDENTS (
     NAME VARCHAR2(100),
     GROUP_ID NUMBER
 );
-
-
-INSERT INTO GROUPS (name, c_val) VALUES ('aboba', 101);
-INSERT INTO GROUPS (name, c_val) VALUES ('goofy', 102);
-INSERT INTO GROUPS (name, c_val) VALUES ('nigba', 103);
-
-
-INSERT INTO STUDENTS (name, group_id) VALUES ('Illidan', 1);
-INSERT INTO STUDENTS (name, group_id) VALUES ('Jack', 1);
-INSERT INTO STUDENTS (name, group_id) VALUES ('Duck', 2);
-INSERT INTO STUDENTS (name, group_id) VALUES ('Paul', 2);
-INSERT INTO STUDENTS (name, group_id) VALUES ('Leon', 3);
-INSERT INTO STUDENTS (name, group_id) VALUES ('Georgy', 3);
