@@ -67,6 +67,10 @@ FOR EACH ROW
 DECLARE
     v_count NUMBER;
 BEGIN
+    IF UPDATING AND :OLD.NAME = :NEW.NAME THEN
+        RETURN;
+    END IF;
+
     SELECT COUNT(*)
     INTO v_count
     FROM GROUPS
